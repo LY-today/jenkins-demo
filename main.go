@@ -11,7 +11,7 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 }
 func main() {
 	fmt.Println("BRANCH_NAME:", os.Getenv("branch"))
-	fmt.Println("启动")
+	fmt.Println("启动1")
 	http.HandleFunc("/", HelloHandler)
 	err := http.ListenAndServe(":8001", nil)
 	fmt.Println(err)
